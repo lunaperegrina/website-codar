@@ -53,12 +53,19 @@ body {
     font-size: 18pt;
     padding: 8px 55px 8px 55px;
     margin: 30px 20px 30px 0px;
+    transition: .4s;
+}
+
+.button-red:hover {
+    background-color: #e95050;
+    transition: .4s;
 }
 
 .parte1 {
     margin: 100px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .parte1-textos {
@@ -73,11 +80,41 @@ body {
 }
 
 .parte2 {
-    margin: 300px;
+    margin-top: 300px;
+}
+
+.parte2-texto-foto {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+
+.parte2-textos {}
 
 .ul-parte2 {
     list-style-type: none;
+    font-size: 20pt;
+    margin-right: 200px;
 }
+
+.ul-parte2 li {
+    white-space: nowrap;
+    padding-top: 10px;
+    display: flex;
+    padding-left: 10px;
+}
+
+.icon-ok {
+    padding-right: 15px;
+}
+
+.input-celular {
+    padding: 8px 20px 8px 20px;
+    border-style: none;
+    background-color: #ddd;
+    border-radius: 10px;
+    font-size: 18pt;
+    width: 240px;
+}
+
+.ligamos-para-voce {}
