@@ -70,14 +70,15 @@ body {
 /************************************************************************/
 
 .parte1 {
-    margin: 100px;
+    width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0px;
 }
 
 .parte1-textos {
-    margin-left: 90px;
+    margin-left: 5%;
 }
 
 .parte1-title {
@@ -85,6 +86,10 @@ body {
     color: #D6000D;
     font-weight: 700;
     font-size: 44pt;
+}
+
+.image-videocall {
+    margin-left: 10px;
 }
 
 
@@ -100,7 +105,6 @@ body {
     white-space: nowrap;
     padding-top: 10px;
     display: flex;
-    padding-left: 10px;
 }
 
 .icon-ok {
@@ -132,11 +136,11 @@ body {
 
 /**************************/
 
-.grid {
+.parte2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 200px auto 200px auto;
-    width: 1000px;
+    width: 50%;
     align-items: center;
     justify-content: center;
 }
@@ -152,11 +156,13 @@ body {
 .dois-cards {
     margin: 100px;
     display: grid;
-    width: 1000px;
+    width: 95%;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
-    margin: 200px auto 200px auto;
+    margin: 100px auto 100px auto;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 .card {
@@ -184,4 +190,60 @@ body {
 
 .info {
     padding: 0px 20px 0px 20px;
+}
+
+.footer-icon {
+    margin-right: 20px;
+    height: 30px;
+}
+
+
+/*********************************************************************************/
+
+@media (max-width: 760px) {
+    .dois-cards {
+        width: 95%;
+        grid-template-columns: 1fr;
+    }
+    .card {
+        margin: 10px;
+    }
+    .footer {
+        width: 95%;
+        grid-template-columns: 1fr;
+    }
+    .footer-icon {
+        height: 30px;
+    }
+    .parte2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* margin: 200px auto 200px auto; */
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+    .parte1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer-icon {
+        height: 20px;
+    }
+}
+
+@media (max-width:1050px) {
+    .ul-parte2 {
+        margin-right: 0px;
+    }
+    .image-videocall {
+        height: 300px;
+    }
+    .image-coding {
+        height: 300px;
+    }
 }
